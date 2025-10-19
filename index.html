@@ -1,29 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Welcome to Shanoob’s Website</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f3f4f6;
-      color: #333;
-      text-align: center;
-      margin-top: 100px;
-    }
-    h1 {
-      color: #0078d4;
-    }
-    a {
-      color: #0078d4;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Template</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-  <h1>Hello, I’m Shanoob 👋</h1>
-  <p>Welcome to my first website hosted on my own domain!</p>
-  <p><a href="mailto:hello@yourdomain.com">Contact me</a></p>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">MyPortfolio</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p>Hello, I'm</p>
+                    <h2>[Your Name]</h2>
+                    <p class="tagline">A Passionate **Web Developer** & **[Your Niche]**</p>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fas fa-envelope"></i></a>
+                    </div>
+                    <a href="#contact" class="btn">Get in Touch</a>
+                </div>
+                <div class="hero-image">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-skills">
+        <div class="container">
+            <h2 class="section-title">About Me & Skills</h2>
+            <div class="about-content">
+                <p>I specialize in building clean, fast, and responsive websites. With a strong foundation in frontend development and a constant drive to learn new technologies, I turn ideas into engaging digital experiences. My goal is to create impactful solutions that blend function and aesthetic seamlessly.</p>
+            </div>
+            
+            <div id="skills" class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5 & CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript (ES6+)</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React / Vue.js</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases (SQL/NoSQL)</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Recent Work</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Project Alpha</h3>
+                    <p>A responsive e-commerce site built with React and a mock backend API. Focused on clean UI/UX.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="link-btn">View Live</a>
+                        <a href="#" target="_blank" class="link-btn secondary">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <h3>Project Beta</h3>
+                    <p>A data visualization dashboard using D3.js to display real-time sensor data. Scalable and efficient.</p>
+                    <div class="project-links">
+                        <a href="#" target="_blank" class="link-btn">View Live</a>
+                        <a href="#" target="_blank" class="link-btn secondary">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <form action="YOUR_FORM_SUBMISSION_ENDPOINT" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 [Your Name]. All rights reserved.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
